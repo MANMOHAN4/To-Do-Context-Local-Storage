@@ -14,7 +14,7 @@ export const ToDoContext = createContext({
   toggleStatus: (id) => {},
 });
 
-export const ToDoContextProvider = ToDoContext.Provider;
+export const ToDoProvider = ToDoContext.Provider;
 
 export function useToDo() {
   return useContext(ToDoContext);

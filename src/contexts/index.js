@@ -1,1 +1,3 @@
-import { ToDoContext, ToDoContextProvider, useToDo } from "./ToDoContext";
+import { ToDoContext, ToDoProvider, useToDo } from "./ToDoContext";
+
+export { ToDoContext, ToDoProvider, useToDo };
