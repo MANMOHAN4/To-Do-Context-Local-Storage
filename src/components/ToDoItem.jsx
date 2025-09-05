@@ -10,7 +10,7 @@ function ToDoItem({ todo }) {
 
   const [todoMessage, setTodoMessage] = useState(todo.todoMsg);
 
-  const { updateTodo, deleteTod, toggleStatus } = useToDo();
+  const { updateTodo, deleteTodo, toggleStatus } = useToDo();
 
   const editTodo = () => {
     updateTodo(todo.id, { ...todo, todoMsg: todoMessage });
@@ -59,7 +59,7 @@ function ToDoItem({ todo }) {
 
       <button
         className="inline-flex w-8 h-8 rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-100 shrink-0"
-        onClick={() => deleteTod(todo.id)}
+        onClick={() => deleteTodo(todo.id)}
       >
         ❌
       </button>

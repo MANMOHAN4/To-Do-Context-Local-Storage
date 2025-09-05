@@ -9,7 +9,7 @@ function ToDoForm() {
   const add = (e) => {
     e.preventDefault();
     if (!todo) return;
-    addTodo({ todo, completed: false });
+    addTodo({ todoMsg: todo, completed: false });
     setTodo("");
   };
 
